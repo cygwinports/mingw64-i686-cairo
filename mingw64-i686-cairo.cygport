@@ -13,7 +13,10 @@ mingw64-i686-gcc cross compiler, and installs into the
 HOMEPAGE="http://cairographics.org/"
 SRC_URI="http://cairographics.org/releases/cairo-${VERSION}.tar.xz"
 SRC_DIR="cairo-${VERSION}"
-PATCH_URI="1.12.14-cairo-gobject-lto.patch"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/mingw-cairo.git/plain/0001-win32-Add-cairo-API-to-set-up-a-Win32-surface-for-an.patch
+	1.12.14-cairo-gobject-lto.patch
+"
 
 DISTCLEANFILES="src/cairo-features.h"
 
