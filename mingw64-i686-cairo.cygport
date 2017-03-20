@@ -2,7 +2,7 @@ CROSS_HOST="i686-w64-mingw32"
 inherit cross
 
 NAME="mingw64-i686-cairo"
-VERSION=1.14.4
+VERSION=1.14.8
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Cross-device vector graphics library for Win32 toolchain"
@@ -15,6 +15,7 @@ SRC_URI="http://cairographics.org/releases/cairo-${VERSION}.tar.xz"
 SRC_DIR="cairo-${VERSION}"
 PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/mingw-cairo.git/plain/0001-win32-Add-cairo-API-to-set-up-a-Win32-surface-for-an.patch
+	http://pkgs.fedoraproject.org/cgit/mingw-cairo.git/plain/0002-win32-Add-a-win32-boilerplate-that-uses-a-real-windo.patch?h=f25
 	1.12.14-cairo-gobject-lto.patch
 "
 
